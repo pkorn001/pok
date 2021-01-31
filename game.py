@@ -19,6 +19,12 @@ def show_result(player_cards, dealer_cards, bet, chips):
     else:
         return f'You lost!!!, lost your bet', chips-bet
 
+def show_chips(chips):
+    if chips >= 0:
+        print(f'You got total {chips} chips')
+    else:
+        print(f'You lost total {-chips} chips')
+
 class Card:
     def __init__(self, suit, name):
         self.suit = suit
