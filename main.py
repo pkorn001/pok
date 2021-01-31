@@ -10,6 +10,7 @@ try:
     if command == 'node start':
         playing = True
     else:
+        # invalid input
         raise Exception()
     while (playing):
         # shuffle the deck
@@ -33,8 +34,10 @@ try:
             player_cards = []
             dealer_cards = []
         else:
+            # invalid input
             raise Exception()
 except:
     print('Invalid Input')
 finally:
+    # show total chips before leaving
     show_chips(chips)
